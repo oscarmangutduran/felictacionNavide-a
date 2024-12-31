@@ -1,0 +1,82 @@
+body {
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%; /* Ajuste de tamaño para pantallas más pequeñas */
+    max-width: 400px; /* Máximo tamaño para el campo de texto */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80%; /* Ajuste para pantallas más pequeñas */
+    max-width: 400px; /* Máximo tamaño del botón */
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    .message {
+        font-size: 1.5rem; /* Reducir tamaño del mensaje en pantallas pequeñas */
+    }
+
+    input, button {
+        font-size: 0.9rem; /* Reducir tamaño de los input y button */
+        width: 90%; /* Aumentar el tamaño relativo en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Más pequeño aún en dispositivos móviles */
+    }
+
+    .message {
+        font-size: 1.2rem; /* Ajuste para mensajes en pantallas muy pequeñas */
+    }
+
+    input, button {
+        font-size: 0.8rem; /* Reducir aún más los inputs y botones */
+        padding: 8px; /* Ajuste de relleno para pantallas pequeñas */
+    }
+}
